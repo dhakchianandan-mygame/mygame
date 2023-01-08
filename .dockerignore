@@ -1,0 +1,19 @@
+node_modules
+npm-debug.log
+
+/build
+
+.env
+.env.*
+.nvmrc
+!.env.example
+
+# https://remix.run
+/.cache
+/public/build
+
+# https://kit.svelte.dev
+/.svelte-kit
+/package
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*

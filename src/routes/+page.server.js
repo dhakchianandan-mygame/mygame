@@ -3,7 +3,7 @@ import {
   removeSubscription,
   getSubscription,
   fetchNotifications,
-} from '$lib/pocketbase';
+} from '$lib/appwrite';
 
 const load = async ({ cookies }) => {
   const id = cookies.get('id');

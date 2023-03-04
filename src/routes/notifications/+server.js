@@ -8,7 +8,7 @@ import {
   addNotification,
   fetchSubscriptions,
   removeSubscription,
-} from '$lib/pocketbase';
+} from '$lib/appwrite';
 
 export const POST = async ({ request, url }) => {
   try {
@@ -18,11 +18,12 @@ export const POST = async ({ request, url }) => {
 
     if (source === 'gcp') {
       const { incident } = await request.json();
+      console.log("gcp incident", JSON.stringify(incident, null, 2));
       const {
         policy_name: name,
         resource_display_name: resource,
         state,
-        observed_value: max,
+        observed_value: max = 0,
       } = incident;
 
       if (state !== 'closed') {

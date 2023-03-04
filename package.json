@@ -23,6 +23,7 @@
   },
   "type": "module",
   "dependencies": {
+    "node-appwrite": "^8.2.0",
     "pocketbase": "^0.9.1",
     "web-push": "^3.5.0"
   }

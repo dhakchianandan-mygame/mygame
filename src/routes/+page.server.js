@@ -3,7 +3,7 @@ import {
   removeSubscription,
   getSubscription,
   fetchNotifications,
-} from '$lib/appwrite';
+} from '$lib/sqlite';
 
 const load = async ({ cookies }) => {
   const id = cookies.get('id');

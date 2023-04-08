@@ -18,8 +18,8 @@ const addSubscription = async (subscription) => {
 
   return {
     ...data,
-    id: data.$id
-  }
+    id: data.$id,
+  };
 };
 
 const removeSubscription = (id) => {
